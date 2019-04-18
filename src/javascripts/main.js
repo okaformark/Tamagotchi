@@ -1,3 +1,8 @@
 import '../styles/main.scss';
+import eat from './components/quadrants/eat';
 
-console.error('game');
+const init = () => {
+  eat.domStringBuilder();
+};
+
+init();
