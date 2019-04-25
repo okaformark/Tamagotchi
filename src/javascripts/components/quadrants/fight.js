@@ -40,10 +40,10 @@ const subStrength = () => {
 };
 
 const addEventListener = () => {
-  const healthButton = document.getElementById('courageBtn');
-  healthButton.addEventListener('click', addStrength);
-  const poisonButton = document.getElementById('robberyBtn');
-  poisonButton.addEventListener('click', subStrength);
+  const courageButton = document.getElementById('courageBtn');
+  courageButton.addEventListener('click', addStrength);
+  const slumberButton = document.getElementById('robberyBtn');
+  slumberButton.addEventListener('click', subStrength);
 };
 
 export default { domStringBuilder, getStrengthValue, addEventListener };
