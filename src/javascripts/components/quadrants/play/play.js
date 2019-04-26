@@ -1,4 +1,4 @@
-import util from '../../helpers/util';
+import util from '../../../helpers/util';
 
 let fun = 50;
 

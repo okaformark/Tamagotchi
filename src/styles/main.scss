@@ -1,5 +1,9 @@
+@import '../javascripts/components/quadrants/eat/eat';
+@import '../javascripts/components/quadrants/fight/fight'; 
+@import '../javascripts/components/quadrants/sleep/sleep';
+@import '../javascripts/components/quadrants/play/play'; 
 html, body { height: 100%; padding: 0; margin: 0; }
-div { width: 50%; height: 50%; float: left; }
+div { position: fixed; width: 50%; height: 50%; float: unset; }
 
 
 

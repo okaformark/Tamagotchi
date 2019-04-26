@@ -1,8 +1,8 @@
 import '../styles/main.scss';
-import eat from './components/quadrants/eat';
-import play from './components/quadrants/play';
-import fight from './components/quadrants/fight';
-import sleep from './components/quadrants/sleep';
+import eat from './components/quadrants/eat/eat';
+import play from './components/quadrants/play/play';
+import fight from './components/quadrants/fight/fight';
+import sleep from './components/quadrants/sleep/sleep';
 
 const initEat = () => {
   eat.domStringBuilder();
