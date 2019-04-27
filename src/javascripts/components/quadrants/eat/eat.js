@@ -1,12 +1,13 @@
 import util from '../../../helpers/util';
 
-let full = 100;
+let full = 50;
 
 const domStringBuilder = () => {
+  console.error('domStringBuilder');
   let domString = '';
-  domString += '<div class = "container">';
-  domString += '<div id = "progressBar">';
-  domString += '<label for="file">Life:</label>';
+  domString += '<div class ="container">';
+  domString += '<div id ="progressBar">';
+  domString += '<label for= "file">Life:</label>';
   domString += `<progress id="file" max="100" value=${full}>100%</progress>`;
   domString += `<h4 id = "score">Score: ${full}</h4>`;
   domString += '<button id = "healthBtn" type="button">Health</button>';
@@ -40,6 +41,7 @@ const subHealth = () => {
 };
 
 const addEventListener = () => {
+  console.error('event');
   const healthButton = document.getElementById('healthBtn');
   healthButton.addEventListener('click', addHealth);
   const poisonButton = document.getElementById('poisonBtn');

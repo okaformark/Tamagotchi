@@ -22,7 +22,7 @@ const getStrengthValue = () => {
 };
 
 const addStrength = () => {
-  if (strength >= 1) {
+  if (strength >= -100) {
     strength += 1;
     document.getElementById('file2').value = strength;
     document.getElementById('score').value = strength;
