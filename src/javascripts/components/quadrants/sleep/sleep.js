@@ -7,7 +7,7 @@ const domStringBuilder = () => {
   domString += '<div class = "container">';
   domString += '<div id = "progressBar">';
   domString += '<label for="file">Energy:</label>';
-  domString += `<progress id="file3" max="200" value=${energy}>100%</progress>`;
+  domString += `<progress id="file3" max="200" value=${energy}>50%</progress>`;
   domString += `<h4 id = "score">Score: ${energy}</h4>`;
   domString += '<button id = "napBtn" type="button">Nap</button>';
   domString += '<button id = "slumberBtn" type="button">Slumber</button>';
