@@ -1,12 +1,13 @@
-// import util from '../../helpers/util';
+import util from '../../helpers/util';
+import pet from './Cave_man.gif';
 
 
-// const petPictureBuilder = () => {
-//   let domString = '';
-//   domString += '<div class = "" id = "petDiv">';
-//   domString += '<img src = "./Cave_man.gif" id = "centeredImage">';
-//   domString += '</div>';
-//   // util.printToDom('pet', domString);
-// };
+const petPictureBuilder = () => {
+  let domString = '';
+  domString += '<div class = "" id = "petDiv">';
+  domString += `<img src=${pet} id = "centeredImage">`;
+  domString += '</div>';
+  util.printToDom('pet', domString);
+};
 
-// export default { petPictureBuilder };
+export default { petPictureBuilder };

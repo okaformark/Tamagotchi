@@ -8,7 +8,7 @@ const domStringBuilder = () => {
   domString += '<div id = "progressBar">';
   domString += '<label for="file">Fun:</label>';
   domString += `<progress id="file1" max="200" value=${fun}>100%</progress>`;
-  domString += `<h4 id = "score">Score: ${fun}</h4>`;
+  domString += `<h4 id = "score1">${fun}</h4>`;
   domString += '<button id = "hikingBtn" type="button">Hiking</button>';
   domString += '<button id = "raftingBtn" type="button">Rafting</button>';
   domString += '</div>';
@@ -17,7 +17,6 @@ const domStringBuilder = () => {
 };
 const getFunValue = () => {
   const funValue = fun;
-  console.error(funValue);
   util.printToDom('file1', funValue);
 };
 
@@ -25,7 +24,7 @@ const hikingValue = () => {
   if (fun >= 2) {
     fun += 2;
     document.getElementById('file1').value = fun;
-    document.getElementById('score').value = fun;
+    document.getElementById('score1').innerHTML = fun;
   }
   getFunValue();
 };
@@ -34,7 +33,7 @@ const raftingValue = () => {
   if (fun < 200) {
     fun += 50;
     document.getElementById('file1').value = fun;
-    document.getElementById('score').value = fun;
+    document.getElementById('score1').innerHTML = fun;
   }
   getFunValue();
 };

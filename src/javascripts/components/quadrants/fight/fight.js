@@ -8,7 +8,7 @@ const domStringBuilder = () => {
   domString += '<div id = "progressBar">';
   domString += '<label for="file">Strength:</label>';
   domString += `<progress id="file2" max="100" value=${strength}>100%</progress>`;
-  domString += `<h4 id = "score">Score: ${strength}</h4>`;
+  domString += `<h4 id = "score2">${strength}</h4>`;
   domString += '<button id = "courageBtn" type="button">Courage</button>';
   domString += '<button id = "robberyBtn" type="button">Robbery</button>';
   domString += '</div>';
@@ -17,7 +17,6 @@ const domStringBuilder = () => {
 };
 const getStrengthValue = () => {
   const strengthValue = strength;
-  console.error(strengthValue);
   util.printToDom('file2', strengthValue);
 };
 
@@ -25,7 +24,7 @@ const addStrength = () => {
   if (strength >= -100) {
     strength += 1;
     document.getElementById('file2').value = strength;
-    document.getElementById('score').value = strength;
+    document.getElementById('score2').innerHTML = strength;
   }
   getStrengthValue();
 };
@@ -34,7 +33,7 @@ const subStrength = () => {
   if (strength <= 100) {
     strength -= 10;
     document.getElementById('file2').value = strength;
-    document.getElementById('score').value = strength;
+    document.getElementById('score2').innerHTML = strength;
   }
   getStrengthValue();
 };

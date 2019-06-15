@@ -9,7 +9,7 @@ const domStringBuilder = () => {
   domString += '<div id ="progressBar">';
   domString += '<label for= "file">Life:</label>';
   domString += `<progress id="file" max="100" value=${full}>100%</progress>`;
-  domString += `<h4 id = "score">Score: ${full}</h4>`;
+  domString += `<h4 id ="score">${full}</h4>`;
   domString += '<button id = "healthBtn" type="button">Health</button>';
   domString += '<button id = "poisonBtn" type="button">Poison</button>';
   domString += '</div>';
@@ -18,7 +18,6 @@ const domStringBuilder = () => {
 };
 const getFullValue = () => {
   const fullValue = full;
-  console.error(fullValue);
   util.printToDom('file', fullValue);
 };
 
@@ -26,7 +25,7 @@ const addHealth = () => {
   if (full <= 90) {
     full += 10;
     document.getElementById('file').value = full;
-    document.getElementById('score').value = full;
+    document.getElementById('score').innerHTML = full;
   }
   getFullValue();
 };
@@ -35,7 +34,7 @@ const subHealth = () => {
   if (full >= 3) {
     full -= 3;
     document.getElementById('file').value = full;
-    document.getElementById('score').value = full;
+    document.getElementById('score').innerHTML = full;
   }
   getFullValue();
 };
